@@ -10,7 +10,7 @@ Then do this in your command prompt:
 ```$ cd github_guide/```
 If the $ symbol doesn't work try without it.
 
-To create a new branch which you should always be working on (i.e., never work on the main branch as it should be the stable version of the website) use this command to create a new branch :``` $ git co -b create_user```
+To create a new branch which you should always be working on (i.e., never work on the main branch as it should be the stable version of the website) use this command to create a new branch :``` $ git co -b create_user``` (if the co doesn't work try ```checkout``` instead)
 
 
 To verify that you are now in the new branch you created use the $ git branc command.
