@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitemap</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="sitemap.css"
+</head>
+
+<body>
+
+    <div class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="comments.html">Comments</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="sitemap.html">Site Map</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </div>
+
+    <h1 class = "centre">Site Map</h1>
+    
+    <svg id="svgJS" height="300" width="1750">
+        <a href="index.html"></a>
+        <g id="home">
+          <rect x="790" y="40" height="50" width="150" rx="10" ry="10" stroke="green" fill="none" stroke-width="2" />
+          <text fill="#000" font-size="14" x="865" y="70" font-family="Arial" text-anchor="middle">Home</text>
+        </g>
+        <g id="comments">
+          <rect x="40" y="240" height="50" width="150" rx="10" ry="10" stroke="green" fill="none" stroke-width="2" />
+          <text fill="#000" font-size="14" x="115" y="270" font-family="Arial" text-anchor="middle">Comments</text>
+        </g>
+        <g id="shop">
+          <rect x="340" y="240" height="50" width="150" rx="10" ry="10" stroke="green" fill="none" stroke-width="2" />
+          <text fill="#000" font-size="14" x="415" y="270" font-family="Arial" text-anchor="middle">Shop</text>
+        </g>
+        <g id="sitemap">
+          <rect x="640" y="240" height="50" width="150" rx="10" ry="10" stroke="green" fill="none" stroke-width="2" />
+          <text fill="#000" font-size="14" x="715" y="270" font-family="Arial" text-anchor="middle">Site Map</text>
+        </g>
+        <g id="quiz">
+          <rect x="940" y="240" height="50" width="150" rx="10" ry="10" stroke="green" fill="none" stroke-width="2" />
+          <text fill="#000" font-size="14" x="1015" y="270" font-family="Arial" text-anchor="middle">Quiz</text>
+        </g>
+        <g id="gallery">
+          <rect x="1240" y="240" height="50" width="150" rx="10" ry="10" stroke="green" fill="none" stroke-width="2" />
+          <text fill="#000" font-size="14" x="1315" y="270" font-family="Arial" text-anchor="middle">Gallery</text>
+        </g>
+        <g id="about">
+          <rect x="1540" y="240" height="50" width="150" rx="10" ry="10" stroke="green" fill="none" stroke-width="2" />
+          <text fill="#000" font-size="14" x="1615" y="270" font-family="Arial" text-anchor="middle">About</text>
+        </g>
+      </svg>
+      
+
+      <script>
+        document.getElementById("home").
+	    addEventListener("click", function() {
+		document.location.href="index.html";
+        });
+
+        document.getElementById("comments").
+	    addEventListener("click", function() {
+		document.location.href="comments.html";
+        });
+
+        document.getElementById("shop").
+	    addEventListener("click", function() {
+		document.location.href="shop.html";
+        });
+
+        document.getElementById("sitemap").
+	    addEventListener("click", function() {
+		document.location.href="sitemap.html";
+        });
+
+        document.getElementById("quiz").
+	    addEventListener("click", function() {
+		document.location.href="quiz.html";
+        });
+
+        document.getElementById("gallery").
+	    addEventListener("click", function() {
+		document.location.href="gallery.html";
+        });
+
+        document.getElementById("about").
+	    addEventListener("click", function() {
+		document.location.href="about.html";
+        });
+    </script>
+</body>
+</html>
