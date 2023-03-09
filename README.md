@@ -22,4 +22,8 @@ Ones you are done with something use ``` $ git push``` to push the branch you we
 
 You should repeat all steps again if you want to work on the project.
 
+If you want to pull changes into your own branch use this commands first : ```git checkout <theNameOfYourBranch>``` - to get inside your branch in which you will be working 
+Then you need to use ```git pull origin master```
+This pulls the changes made in master in the remote version to the local version
+
 ALWAYS CREATE A NEW BRANCH AND MAKE SURE THAT YOU ARE ON IT WHEN CODING TO AVOID ISSUES IN THE FUTURE!!!!!!
