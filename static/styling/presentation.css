@@ -24,8 +24,6 @@ html, body {
 }
 .center_content{
     box-shadow: 10px 10px 10px rgba(60, 74, 63, 0.3);
-
-
     border-radius: 10px;
     display: flex;
     justify-content: center;
@@ -43,7 +41,7 @@ html, body {
 }
 .navbar {
     box-shadow: 0px 10px 10px rgba(60, 74, 63, 0.3);
-    background-color: rgb(147, 184, 116);
+    background-color: rgb(135, 177, 135);
 
 
     /* background-color: rgb(135, 177, 135); */
