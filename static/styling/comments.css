@@ -1,0 +1,86 @@
+@import "main.css";
+* {
+    box-sizing: border-box;
+    padding: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#title{
+    color: rgb(117, 152, 117)
+}
+/*colour change for each of the labels*/
+label[for="name"] {
+    color: #424735;
+    font-weight: bold;
+}
+
+label[for="navigation"], label[for="visit"], label[for="recommend"] {
+    color: #424735;
+    position: relative;
+    top: 3px;
+    left: -5px; /*setting specific padding to fit the lable and the radio button symmetrically */
+}
+
+label[for="satisfied"] {
+    display: inline-block;
+    position: relative;
+    top: 20px;
+    left: -19px;
+    color: #424735;
+  }
+
+label[for="updates"] {
+    color: #424735;
+    font-weight: bold;
+}
+
+/*formatting the forms content to be in the middle*/
+.form-content {
+    width: auto;
+    margin: 50px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #f2f2f2; /*setting a neutral color for the form background to have contrast*/
+    padding: 10px;
+    height: max-content;
+}
+
+p {
+    color: #424735;
+    font-weight: bold;
+
+}
+
+.updates {
+    color: #424735;
+    font-weight: bold;
+    border: 1px solid rgb(37, 15, 15); 
+    background-color: rgb(222, 226, 216);
+    width: 20%;
+    text-align: center;
+}
+
+/*formatting all of the input types in order to match and to fit correctly on the page*/
+input[type=text], select, textarea {    
+    padding: 6px;    
+    border: 1px solid rgb(37, 15, 15); 
+    background-color: rgb(222, 226, 216);
+    border-radius: 4px;    
+  }    
+
+input[type=email], select, textarea {       
+    padding: 6px;    
+    border: 1px solid rgb(37, 15, 15);  
+    background-color: rgb(222, 226, 216);
+    border-radius: 4px;    
+  }   
+
+textarea {
+    width: 40%;
+    padding-bottom: 0px;
+}
+
+input[type="radio"] {
+    vertical-align: middle;
+  }
+  
