@@ -1,0 +1,43 @@
+body {
+    background-color: rgb(222, 226, 216);
+}
+
+.navbar {
+    background-color: rgb(135, 177, 135);
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 15px;
+    position: sticky;
+}
+ul li a{
+    text-decoration: none;
+    color: #424735;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+ul li::after{
+    content: '';
+    height: 4px;
+    width: 0; /*sets width to 0 before hover and expands to 100% after hover*/
+    background: rgb(51, 103, 93);
+    border-radius: 30px;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+ul li:hover::after{
+    width: 100%;
+}
+

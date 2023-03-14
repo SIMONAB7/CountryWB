@@ -24,7 +24,7 @@ html, body {
 }
 .center_content{
     box-shadow: 10px 10px 10px rgba(60, 74, 63, 0.3);
-
+  
 
     border-radius: 10px;
     display: flex;
@@ -32,7 +32,7 @@ html, body {
     align-items: center;
     flex-direction: column; /* Added property to display content as block elements */
     height: 100vh;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat-Regular', sans-serif;
     background-color: rgba(207, 226, 237, 0.8);
     position: absolute;
     top: 50%;
@@ -110,4 +110,27 @@ ul li:hover::after{
     font-size:larger;
     font-weight: bolder;
     letter-spacing: 2px;
+  }
+
+  @font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('../fonts/Montserrat-Black.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('../fonts/Montserrat-Regular.ttf') format('truetype');
+  }
+  
+  h1 {
+    font-family: 'Montserrat-Bold', sans-serif;
+    font-size:50px;
+    transform: scaleY(5);
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  #line {
+    margin-top:0;
+    padding-top: 0;
   }
