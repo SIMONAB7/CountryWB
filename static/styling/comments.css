@@ -38,6 +38,7 @@ label[for="updates"] {
 .form-content {
     width: auto;
     margin: 50px;
+    margin-bottom: auto;
     text-align: center;
     border-radius: 5px;
     background-color: #f2f2f2; /*setting a neutral color for the form background to have contrast*/
@@ -82,5 +83,41 @@ textarea {
 
 input[type="radio"] {
     vertical-align: middle;
-  }
+}
   
+input[type="submit"] {
+    background-color: rgb(135, 177, 135); 
+    border: none;
+    color: white;
+    padding: 10px 50px;
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-image: linear-gradient(0, #33675d, #33675d);
+    background-size: 0 0; /*sets background to 0 so in the hover effect it can expand to create the animation*/
+    transition: 0.5s;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+input[type="submit"]:hover {
+    background-size: 100% 100%; /*makes the background to fully consume the button changing it to a different color*/
+}
+
+footer{
+    text-align: center;
+    text-decoration: underline;
+    position: relative;
+    padding-top: 10px;
+}
+
+footer a{
+    text-decoration:solid;
+    color: #424735;
+    font-weight: bold;
+}
+footer a::after{
+    text-decoration:solid;
+    font-weight: bold;
+}
