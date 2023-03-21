@@ -1,1 +1,294 @@
-@import url("presentation.css")
+body {
+    margin: 0;
+}
+.navbar {
+    position: fixed;
+    background-color: rgb(135, 177, 135);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin-right: 3.5em;
+}
+
+ul li{
+    list-style: none;
+    display: inline-block;
+    position: sticky;
+}
+
+ul li:nth-child(8){
+    height: 1.5em;
+    width: 1.5em;
+    background-image: url('../images/cart.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+ul li a{
+    text-decoration: none;
+    color: #424735;
+    font-family: 'Montserrat-Bold', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+ul li::after{
+    content: '';
+    height: 4px;
+    width: 0; /*sets width to 0 before hover and expands to 100% after hover*/
+    background: rgb(51, 103, 93);
+    border-radius: 30px;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+ul li:hover::after{
+    width: 100%;
+}
+
+.logo-holder {
+    display: flex;
+    align-items: center;
+    margin-left: 3.5em;
+    margin-right: auto;
+    height: 2em;
+    width: 10em;
+}
+
+.logo-holder img {
+    height: 7em;
+    width: 100%;
+    object-fit:contain;
+}
+
+@font-face {
+    font-family: 'Montserrat-Black';
+    src: url('../fonts/Montserrat-Black.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('../fonts/Montserrat-Bold.ttf') format('truetype');
+  }
+  
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('../fonts/Montserrat-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat-Light';
+    src: url('../fonts/Montserrat-Light.ttf') format('truetype');
+}
+
+.shop-banner {
+    background-image: url('../images/Backdrop.gif');
+    object-fit: cover;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.shop-banner h1 {
+    color: rgb(135, 177, 135);
+    font-size: 8em;
+    font-family: 'Montserrat-Black', Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px black;
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+
+.shop-banner h2 {
+    color: white;
+    font-size: 2em;
+    font-family: 'Montserrat-Regular', Arial, Helvetica, sans-serif;
+    text-shadow: 1px 1px black;
+
+}
+.shop-banner img {
+    height: 6em;
+    width: 40em;
+    object-fit:cover;
+}
+.shop-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.banner-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 10em;
+    width: 80%;
+    font-family: 'Montserrat-Regular', Arial, Helvetica, sans-serif;
+}
+
+.banner-text h1 {
+    line-height: 0;
+    font-family: 'Montserrat-Regular', Arial, Helvetica, sans-serif;
+}
+.item-container {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5em;
+    justify-content: center;
+    margin-bottom: 5em;
+}
+
+.item{
+    height: 30em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.item button {
+    border: none;
+    background-size: cover;   
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    transition: background-image 0.5s ease-in-out;
+}
+
+.item:nth-child(1) button {
+   background-image: url('../images/snorkling.png');
+}
+
+.item:nth-child(2) button {
+    background-image: url('../images/hiking.png');
+ }
+
+ .item:nth-child(3) button {
+    background-image: url('../images/fishing.png');
+ }
+
+ .item:nth-child(4) button {
+    background-image: url('../images/snowboarding.png');
+ }
+
+.item h3 {
+    font-family:'Montserrat-Regular', Arial, Helvetica, sans-serif;
+    margin-bottom: 0;
+}
+
+.item p {
+    margin-top: 0;
+    font-family:'Montserrat-Regular', Arial, Helvetica, sans-serif;
+}
+
+.eco-friendly {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40em;
+    background-color:rgb(135, 177, 135);
+    width: 100%;
+}
+
+.vase {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+    gap: 2em;
+}
+
+.plant {
+    height: 100%;
+    background-image: url('../images/plant.png');
+    background-size: cover;
+    background-position: center;
+
+}
+
+.item:nth-child(1) button:hover {
+    background-image: url('../images/snorkling-hover.png');
+ }
+
+
+.item:nth-child(2) button:hover {
+    background-image: url('../images/hiking-hover.png');
+}
+
+.item:nth-child(3) button:hover {
+    background-image: url('../images/fishing-hover.png');
+}
+
+.item:nth-child(4) button:hover {
+    background-image: url('../images/snowboarding-hover.png');
+}
+
+.plant {
+    height: 92.5%;
+    width: 55%;
+}
+
+.volunteers {
+    width: 45%;
+    font-family:'Montserrat-Regular', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.volunteers img {
+    height: 25em; 
+    width: 100%;  
+}
+
+.msg-container {
+    color:white;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    height: 12em;
+    font-family:'Montserrat-Regular', Arial, Helvetica, sans-serif;
+    width:80%;
+}
+
+.left-side {
+    width: 50%;
+}
+.right-side {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: 50%;
+}
+.icons{
+    height: 50px;
+    width: 200px;
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+}
+#github {
+    background-image: url('../images/github.png');
+    height: 50px;
+    width: 50px;
+}
+
+#linkedin {
+    background-image: url('../images/linkedin.png');
+    height: 50px;
+    width: 50px;
+}
