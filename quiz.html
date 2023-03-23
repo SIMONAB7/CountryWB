@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styling/quiz.css">
+    <title>Quiz</title>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="comments.html">Comments</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="sitemap.html">Site Map</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </div>
+    <div class="background-img"></div>
+    
+    <div class="info_box">
+        <div class="info-title"><span>Welcome to the Explorify&trade; Quiz!</span></div>
+        <div class="info-list">
+            <div class="info">1. You have <span>1 minute</span> to complete the quiz.</div>
+            <div class="info">2. The quiz will submit automatically when the time ends.</div>
+            <div class="info">3. The quiz consists of <span>10</span> questions.</div>
+            <div class="info">4. Your final score will be totalled at the end.</div>
+        </div>
+        <div class="buttons">
+            <button class="restart">Continue</button>
+        </div>
+    </div>
+    
+    <div class="quiz_box">
+        <header>
+            <div class="title">Explorify&trade;</div>
+            <div class="timer">
+                <div class="timer_sec">60</div>
+            </div>
+        </header>
+        <section>
+            <div class="quiz_questions"></div>
+            <div class="option_list"></div>
+        </section>
+        <footer>
+            <div class="question_num"></div>
+            <button class="next_btn">Next</button>
+        </footer>
+    </div>
+    <div class="result_box">
+        <div class="complete_text">Quiz Complete!</div>
+        <div class="score_text"></div>
+        <div class="time_spent_text"></div>
+        <div class="buttons">
+            <button class="restart">Restart</button>
+            <button class="quit">Quit</button>
+        </div>
+    </div>
+    <script src="/scripts/questions.js"></script>
+    <script src="/scripts/script.js"></script>
+</body>
+</html>
