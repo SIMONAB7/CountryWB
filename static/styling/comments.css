@@ -1,4 +1,4 @@
-@import "main.css";
+@import "../styling/main.css";
 * {
     box-sizing: border-box;
     padding: auto;
