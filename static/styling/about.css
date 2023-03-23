@@ -1,11 +1,7 @@
-@import "../../main.css";
+@import "../styling/main.css";
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-}
-
-.navbar {
-    z-index: 1;
 }
 
 .background-img {
@@ -19,7 +15,6 @@ body {
     background-repeat:no-repeat;
     background-size:cover;
     opacity: 0.7;
-
     filter: blur(5px);
 }
 
@@ -30,7 +25,6 @@ body {
     margin-left: auto;
     margin-right: auto;
     color: #272b1d;
-
 }
 
 .students {
