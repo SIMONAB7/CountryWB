@@ -79,3 +79,19 @@ ul li a {
     color: white;
     font-size: 1.5em;
 }
+
+.page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-editor {
+    font-family: 'Montserrat-Regular', sans-serif;
+    text-decoration: none;
+    color: white;
+    align-self: self-end;
+    margin-top: 2em;
+    margin-right: 2em;
+}

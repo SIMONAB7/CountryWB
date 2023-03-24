@@ -105,7 +105,7 @@ ul li:hover::after{
 
 .shop-banner h1 {
     color: rgb(135, 177, 135);
-    font-size: 8em;
+    font-size: 10em;
     font-family: 'Montserrat-Black', Arial, Helvetica, sans-serif;
     text-shadow: 2px 2px black;
     margin-top: 0;
@@ -114,16 +114,21 @@ ul li:hover::after{
 }
 
 .shop-banner h2 {
+    margin-top:0;
+    letter-spacing: 0.2em;
     color: white;
     font-size: 2em;
     font-family: 'Montserrat-Regular', Arial, Helvetica, sans-serif;
     text-shadow: 1px 1px black;
 
 }
-.shop-banner img {
-    height: 6em;
-    width: 40em;
-    object-fit:cover;
+.shop-banner .img {
+    margin-bottom: 0;
+    font-size: 3em;
+    font-family: 'Montserrat-Black', Arial, Helvetica, sans-serif;
+    color: white;
+    object-fit: cover;
+
 }
 .shop-content {
     display: flex;
@@ -291,4 +296,20 @@ ul li:hover::after{
     background-image: url('../images/linkedin.png');
     height: 50px;
     width: 50px;
+}
+
+.page-editor {
+    font-family: 'Montserrat-Regular', sans-serif;
+    text-decoration: none;
+    color:black;
+}
+
+.price .sale {
+    text-decoration: line-through;
+    color:#9a2205;
+}
+
+.price {
+    display: flex;
+    flex-direction: row;
 }
