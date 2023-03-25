@@ -5,7 +5,8 @@ body {
 }
 
 .navbar {
-    z-index: 1;
+    z-index: 5;
+    box-shadow: 0 1px 20px rgba(0,0,0,0.5);
 }
 
 .background-img {
@@ -19,7 +20,6 @@ body {
     background-repeat:no-repeat;
     background-size:cover;
     opacity: 0.7;
-
     filter: blur(5px);
 }
 
@@ -30,7 +30,6 @@ body {
     margin-left: auto;
     margin-right: auto;
     color: #272b1d;
-
 }
 
 .students {
@@ -43,14 +42,6 @@ body {
     top: 20%;
 }
 
-.students img {
-    position: relative;
-    top: 10px;
-    height: 90%;
-    width: 90%;
-    border-radius: 10px;
-}
-
 .students div {
     background-color: rgb(135, 177, 135);
     display:inline-block;
@@ -58,5 +49,77 @@ body {
     border-radius: 10px;
     margin-left: 10px;
     margin-right: 10px;
+    box-shadow: 0 6px 20px 0 rgba(0,0,0,0.5);
 }
 
+.students img {
+    position: relative;
+    top: 10px;
+    height: 90%;
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 0 6px 0 rgba(0,0,0,0.2);
+}
+
+.students button {
+    border: none;
+    background: none;
+    color: #272b1d;
+    font-size: large;
+    cursor: pointer;
+}
+
+.window.activeInfo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(60, 60, 60, 0.5);
+}
+
+.activeStudent.activeInfo {
+    position: absolute;
+    z-index: 6;
+    width: 50%;
+    height: 75%;
+    top: 15%;
+    left: 25%;
+    background:rgb(135, 177, 135);
+    border-radius: 10px;
+    box-shadow: 0 6px 20px 0 rgba(0,0,0,0.5);
+}
+
+.activeStudent .ex {
+    float: right;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #272b1d;
+    font-size: large;
+    font-weight: bold;
+    visibility: hidden;
+}
+
+.activeStudent .image {
+    visibility: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    width: 50%;
+    text-align: center;
+}
+
+.activeStudent .image img {
+    border-radius: 10px;
+    box-shadow: 0 6px 20px 0 rgba(0,0,0,0.5);
+}
+
+.activeStudent .text {
+    visibility: hidden;
+    text-align: center;
+    color: #272b1d;
+    font-size: larger;
+    font-weight: bolder;
+}
