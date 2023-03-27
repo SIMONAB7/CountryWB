@@ -94,7 +94,8 @@ body {
 
 .shop-banner {
     background-image: url('../images/Backdrop.gif');
-    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-color: red;
     display: flex;
     flex-direction: column;
