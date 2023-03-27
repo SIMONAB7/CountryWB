@@ -1,8 +1,9 @@
 body {
-    margin: 0;
+    margin:0;   
 }
 .navbar {
     position: fixed;
+    z-index: 100;
     background-color: rgb(135, 177, 135);
     overflow: hidden;
     display: flex;
@@ -12,20 +13,20 @@ body {
     text-align: center;
 }
 
-ul {
+.navbar ul {
     display: flex;
     align-items: center;
     gap: 1em;
     margin-right: 3.5em;
 }
 
-ul li{
+.navbar ul li{
     list-style: none;
     display: inline-block;
     position: sticky;
 }
 
-ul li:nth-child(8){
+.navbar ul li:nth-child(8){
     height: 1.5em;
     width: 1.5em;
     background-image: url('../images/cart.png');
@@ -33,7 +34,7 @@ ul li:nth-child(8){
     background-size: contain;
     background-repeat: no-repeat;
 }
-ul li a{
+.navbar ul li a{
     text-decoration: none;
     color: #424735;
     font-family: 'Montserrat-Bold', Arial, Helvetica, sans-serif;
@@ -41,7 +42,7 @@ ul li a{
     text-transform: uppercase;
 }
 
-ul li::after{
+.navbar ul li::after{
     content: '';
     height: 4px;
     width: 0; /*sets width to 0 before hover and expands to 100% after hover*/
@@ -52,7 +53,7 @@ ul li::after{
     bottom: -5px;
     transition: 0.5s;
 }
-ul li:hover::after{
+.navbar ul li:hover::after{
     width: 100%;
 }
 
@@ -210,13 +211,14 @@ ul li:hover::after{
     width: 100%;
 }
 
-.vase {
+.volunteer-holder {
     width: 80%;
     height: 80%;
-    display: flex;
-    justify-content: space-around;
+    display: flex;  
+    justify-content: space-between;
     gap: 2em;
 }
+
 
 .plant {
     height: 100%;
@@ -264,6 +266,7 @@ ul li:hover::after{
 
 .footer {
     display: flex;
+    justify-content: center;
     align-items: center;
     height: 12em;
     font-family:'Montserrat-Regular', Arial, Helvetica, sans-serif;
@@ -310,6 +313,7 @@ ul li:hover::after{
 }
 
 .price {
+    margin-top:0.5em;
     display: flex;
     flex-direction: row;
 }

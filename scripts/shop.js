@@ -1,23 +1,14 @@
-const snorkling = document.getElementById("snorkling-btn");
-const hiking = document.getElementById("hiking-btn");
-const fishing = document.getElementById("fishing-btn");
-const snowboarding = document.getElementById("snowboarding-btn");
+const buttons = document.querySelectorAll(".item button");
+let cartItems = [];
 
-snorkling.addEventListener("click", function() {
-  window.alert("Snorkling selected");
-});
-
-
-hiking.addEventListener("click", function() {
-    window.alert("Hiking selected");
+buttons.forEach((button) => {
+  button.addEventListener("click", function() {
+    const itemName = button.nextElementSibling.textContent;
+    cartItems.push(itemName);
+    window.alert(itemName + " added to cart");
+    localStorage.setItem('cartItems', JSON.stringify(cartItems));
   });
-
-  
-fishing.addEventListener("click", function() {
-    window.alert("Fishing selected");
 });
 
 
-snowboarding.addEventListener("click", function() {
-    window.alert("Snowboarding seleceted");
-});
+
