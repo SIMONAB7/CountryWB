@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="static/styling/checkout.css">
+        <title>Checkout</title>
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="logo-holder">
+                <img src="static/images/logo-white.png" alt="logo">
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="comments.html">Comments</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="sitemap.html">Site Map</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="checkout.html" id="checkout" style="color:transparent">basket</a></li>
+            </ul>
+        </div>
+        <div class="bill-header">
+            <h1>Billing Information</h1>
+            <h3>Fill out the following information below</h3>
+        </div>
+        <div class="form-holder">
+            <div class="forms">
+                <div class="left-form">
+                    <ul class="tabs">
+                        <li data-tab-target="#shipping" class="active tab">Shipping</li>
+                        <li data-tab-target="#payment" class="tab">Payment</li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="shipping" data-tab-content class="active">
+                            <h1>Billing Details</h1>
+                        </div>
+                        <div id="payment" data-tab-content>
+                            <h1>Payment Details</h1>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="right-form" >
+                    <h2>Cart Summary</h2>
+                    <div id="cart-summary"></div>
+                    <div class="cart-footer">
+                        <p id="total">Total:</p>
+                        <div class="cart-buttons">
+                            <button id="clear-cart">Clear</button> 
+                            <button id="pay-now">Pay Now</button>
+                        </div>      
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <script src="scripts/checkout.js"></script>
+    </body>
+</html>
