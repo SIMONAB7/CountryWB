@@ -153,6 +153,6 @@ function timer(){
 }
 
 function questionCount(index){
-   let questionNumber = '<span><p>Question Number: ' + index + '</p></span>';
+    let questionNumber = '<span><p>Question Number: ' + index + '</p></span>';
     bottom_ques_counter.innerHTML = questionNumber;  
 }
