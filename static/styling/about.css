@@ -3,6 +3,9 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
+.navbar {
+    margin-top: -22px;
+}
 
 .background-img {
     background-image: url(../images/about.jpeg);
