@@ -112,6 +112,7 @@ body {
     text-shadow: 2px 2px black;
     margin-top: 0;
     margin-bottom: 0;
+    text-align: center;
 
 }
 
@@ -317,4 +318,8 @@ body {
     margin-top:0.5em;
     display: flex;
     flex-direction: row;
+}
+
+#checkout {
+    color:transparent;
 }

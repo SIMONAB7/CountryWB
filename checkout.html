@@ -36,15 +36,56 @@
                     <div class="tab-content">
                         <div id="shipping" data-tab-content class="active">
                             <h1>Billing Details</h1>
+                            <form id="shipping-form">
+                                <label for="name">Full Name:</label> <br>
+                                <input type="text" id="name" name="name" class="wide-input" required> <br>
+                                <label for="email">Email Address:</label> <br>
+                                <input type="email" id="email" name="email" class="wide-input" required> <br>
+                                <label for="address">Address:</label> <br>
+                                <input type="text" id="address" name="adress" class="wide-input" required> <br>
+                                <label for="country">Country:</label> <br>
+                                <input type="text" id="country" name="country" class="wide-input" required> <br>
+                                <div class="zip-code">
+                                    <div class="state-holder">
+                                        <label for="state">State:</label> <br>
+                                        <input type="text" id="state" name="state" class="wide-input" required>    
+                                    </div>
+                                    <div class="zip-holder">
+                                        <label for="zip-code">Zip Code:</label> <br>
+                                        <input type="text" id="zipcode" name="zip-code" class="wide-input" required> 
+                                    </div> 
+                                </div>
+                                <div class="shipping-buttons">
+                                    <input type="submit" id="shipping-submit" value="Submit"></button> 
+                                    <input type="reset" id="shipping-reset"></button>
+                                </div>  
+                            </form>
                         </div>
                         <div id="payment" data-tab-content>
                             <h1>Payment Details</h1>
+                            <form id="payment-form">
+                                <label for="card-name">Cardholder Name:</label> <br>
+                                <input type="text" id="card-name" name="card-name" class="wide-input" required> <br>
+                                <label for="card-number">Card Number:</label> <br>
+                                <input type="password" id="card-number" name="card-number" class="wide-input" required> <br>
+                                <div class="zip-code">
+                                    <div class="state-holder">
+                                        <label for="expiry-date">Expiry Date:</label> <br>
+                                        <input type="text" id="expiry-date" name="expiry-date" class="wide-input" required>    
+                                    </div>
+                                    <div class="zip-holder">
+                                        <label for="cvv">CVV:</label> <br>
+                                        <input type="text" id="cvv" name="cvv" class="wide-input" required> 
+                                    </div> 
+                                </div>
+                                <div class="shipping-buttons">
+                                    <input type="submit" id="payment-submit" value="Pay Now"></button> 
+                                    <input type="reset" id="payment-reset"></button>
+                                </div>  
+                            </form>
                         </div>
                     </div>
                 </div>
-
-
-
                 <div class="right-form" >
                     <h2>Cart Summary</h2>
                     <div id="cart-summary"></div>
@@ -52,7 +93,6 @@
                         <p id="total">Total:</p>
                         <div class="cart-buttons">
                             <button id="clear-cart">Clear</button> 
-                            <button id="pay-now">Pay Now</button>
                         </div>      
                     </div>
                     
