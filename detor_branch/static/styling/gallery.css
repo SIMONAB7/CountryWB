@@ -1,0 +1,83 @@
+div.gallery {
+    margin: 5px;
+    border: 1px solid #000000;
+    float: left;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.description {
+    padding: 15px;
+}
+
+/*https://www.w3schools.com/css/css_image_gallery.asp*/
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+ 
+@media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 3px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+
+
+  .center {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    text-align: center;
+}
+
+
+.center img {
+    width: 80%;
+    height: auto;
+}
+
+
+.center p {
+    color: #fff;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+
+.hovered {
+    opacity: 0.5;
+}
+  
+.centre{
+    text-align: center;
+    position: relative;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 15px;
+}
