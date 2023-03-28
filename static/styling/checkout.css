@@ -22,7 +22,7 @@ body {
     font-family: 'Montserrat-Light', Arial, Helvetica, sans-serif;
 }
 .form-holder {
-    overflow-x: hidden;
+    overflow: hidden;
     top:4em;
     height: 50em;
     width: 100%;
@@ -33,7 +33,6 @@ body {
 }
 .forms {
     width: 90%;
-    height: 100%;
     display: flex;
     justify-content: end;
 }
@@ -87,7 +86,7 @@ body {
     border:none;
 }
 
-#clear-cart:hover, #shipping-submit:hover , #shipping-reset:hover, #payment-submit:hover, #payment-reset {
+#clear-cart:hover, #shipping-submit:hover , #shipping-reset:hover, #payment-submit:hover, #payment-reset:hover {
     background-color: #407d40;
 }
 
@@ -194,4 +193,10 @@ body {
     margin-top: 2em;
     display: flex;
     gap:5em;
+}
+
+.page-editor {
+    margin-right: 1.5em;
+    margin-top: 8.5em;
+    float: right;
 }
