@@ -1,5 +1,9 @@
 const buttons = document.querySelectorAll(".item button");
-let cartItems = [];
+let cartItems = JSON.parse(localStorage.getItem("cartItems"));
+
+if (!cartItems) {
+  cartItems = [];
+}
 
 buttons.forEach((button) => {
   button.addEventListener("click", function() {
@@ -9,6 +13,3 @@ buttons.forEach((button) => {
     localStorage.setItem('cartItems', JSON.stringify(cartItems));
   });
 });
-
-
-

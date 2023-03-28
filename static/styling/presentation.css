@@ -1,6 +1,11 @@
 body {
     background-image: url("../images/Backdrop.gif");
 }
+
+.fadeout {
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
 @font-face {
     font-family: 'Montserrat-Bold';
     src: url('../fonts/Montserrat-Black.ttf') format('truetype');
