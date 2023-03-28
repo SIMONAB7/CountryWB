@@ -1,6 +1,7 @@
 * {
     background-color: rgb(165, 178, 184);
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 .image {
@@ -26,6 +27,7 @@ h2 {
     font-family: Arial, Helvetica, sans-serif;
     position: relative;
     color: rgb(91, 86, 126);
+    text-decoration: underline;
 }
 
 p {
@@ -55,4 +57,31 @@ p {
 hr {
     border: 2px solid rgb(81, 104, 94);
     border-radius: 20px;
+}
+
+.backtop {
+    text-decoration: none;
+    background: none;
+    border-radius: 100px;
+    margin: auto;
+    text-align: center;
+    display: block;
+}
+
+a {
+    text-decoration: underline;
+    color: rgb(81, 104, 94);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+address {
+    display: block;
+    text-align: center;
+    margin: auto;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(91, 86, 126);
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
 }

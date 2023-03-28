@@ -1,0 +1,45 @@
+@import "../styling/main.css";
+
+#svgJS {
+    display: block;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 65%;
+    left: 65%;
+    }
+.centre{
+    text-align: center
+    }
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 30px;
+}
+
+.h1{
+    color: blue
+}
+
+#svgJS g:hover polyline,
+#svgJS g:hover line {
+    fill: none;
+    stroke-width: 2;
+    stroke: black;
+}
+
+#svgJS g:hover g text,
+#svgJS g:hover text {
+    font-weight: bold;
+}
+
+#svgJS g:hover polygon,
+#svgJS g:hover rect,
+#svgJS g:focus polygon,
+#svgJS g:focus rect {
+    fill: hsla(24, 20%, 50%,.3);
+    stroke: black;
+    stroke-width: 2;
+} 
