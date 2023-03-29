@@ -3,6 +3,21 @@ body {
     margin: 0;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(222, 226, 216);
+}
+  
+::-webkit-scrollbar-thumb {
+    background-color: rgb(129, 168, 129);
+    border-radius: 3px;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(51, 103, 93);
+}
+
 @font-face {
     font-family: 'Montserrat-Black';
     src: url('../fonts/Montserrat-Black.ttf') format('truetype');

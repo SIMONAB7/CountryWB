@@ -1,29 +1,6 @@
+@import "../styling/main.css";
 body {
     margin:0;   
-}
-.navbar {
-    position: fixed;
-    z-index: 100;
-    background-color: rgb(135, 177, 135);
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    text-align: center;
-}
-
-.navbar ul {
-    display: flex;
-    align-items: center;
-    gap: 1em;
-    margin-right: 3.5em;
-}
-
-.navbar ul li{
-    list-style: none;
-    display: inline-block;
-    position: sticky;
 }
 
 .navbar ul li:nth-child(8){
@@ -33,43 +10,6 @@ body {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-}
-.navbar ul li a{
-    text-decoration: none;
-    color: #424735;
-    font-family: 'Montserrat-Bold', Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-.navbar ul li::after{
-    content: '';
-    height: 4px;
-    width: 0; /*sets width to 0 before hover and expands to 100% after hover*/
-    background: rgb(51, 103, 93);
-    border-radius: 30px;
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    transition: 0.5s;
-}
-.navbar ul li:hover::after{
-    width: 100%;
-}
-
-.logo-holder {
-    display: flex;
-    align-items: center;
-    margin-left: 3.5em;
-    margin-right: auto;
-    height: 2em;
-    width: 10em;
-}
-
-.logo-holder img {
-    height: 7em;
-    width: 100%;
-    object-fit:contain;
 }
 
 @font-face {
