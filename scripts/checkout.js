@@ -27,7 +27,7 @@ const tabs = document.querySelectorAll('[data-tab-target]');
 const tabContents = document.querySelectorAll('[data-tab-content');
 tabs.forEach(tab => {
   tab.addEventListener('click', () => {
-    const target = document.querySelector(tab.dataset.tabTarget)
+    const target = document.querySelector(tab.dataset.tabTarget);
     tabContents.forEach(tabContent => {
       tabContent.classList.remove('active');
     });
@@ -38,6 +38,31 @@ tabs.forEach(tab => {
     tab.classList.add('active');
   });
 });
+
+const next = document.getElementById('shipping-submit');
+
+next.addEventListener('click', () => {
+  const tabs = document.querySelectorAll('[data-tab-target]');
+  const tabContents = document.querySelectorAll('[data-tab-content');
+  tabs.forEach(tab => {
+      const target = document.querySelector(tab.dataset.tabTarget);
+      tabContents.forEach(tabContent => {
+        tabContent.classList.remove('active');
+      });
+      tabs.forEach(tab => {
+        tab.classList.remove('active');
+      });
+      target.classList.add('active');
+      tab.classList.add('active');
+  });
+});
+
+
+
+
+
+
+
 
 
 const shippingForm = document.getElementById("shipping-form");
@@ -115,4 +140,28 @@ paymentClear.addEventListener("click", () => {
   localStorage.removeItem("cardNum");
   localStorage.removeItem("expiryDate");
   localStorage.removeItem("cvv");
+});
+
+
+const requiredInputs = document.querySelectorAll('#shipping-form input[required]');
+const nextButton = document.getElementById('shipping-submit');
+
+function checkFormValidity() {
+  let isValid = true;
+  requiredInputs.forEach(input => {
+    if (!input.checkValidity()) {
+      isValid = false;
+    }
+  });
+  return isValid;
+}
+
+requiredInputs.forEach(input => {
+  input.addEventListener('input', () => {
+    if (checkFormValidity()) {
+      nextButton.removeAttribute('disabled');
+    } else {
+      nextButton.setAttribute('disabled', true);
+    }
+  });
 });
