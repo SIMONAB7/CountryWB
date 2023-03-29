@@ -1,0 +1,127 @@
+:root {
+    --slider-padding: 5rem;
+}
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #000000;
+    float: left;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.description {
+    padding: 15px;
+}
+
+/*https://www.w3schools.com/css/css_image_gallery.asp*/
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+ 
+@media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 3px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+
+
+  .center {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    text-align: center;
+}
+
+
+.center img {
+    width: 80%;
+    height: auto;
+}
+
+
+.center p {
+    color: #fff;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+
+.hovered {
+    opacity: 0.5;
+}
+  
+.centre{
+    text-align: center;
+    position: relative;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.handle{
+    border: none;
+    flex-grow: 0;
+    width: 5rem;
+    background-color: rgb(190, 207, 158);
+    font-size: 5rem;
+    z-index: 10;
+    margin: .25rem 0;
+    transition: font-size 150ms ease-in-out;
+}
+
+.handle:hover {
+    background-color: rgb(135, 177, 135);
+    cursor: pointer;
+    font-size: 6rem;
+
+}
+
+.content{
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.images{
+    --images-index: 0;
+    display: flex;
+    width: calc(100% - 2 * var(--slider-padding));
+    transform: translateX(calc(var(--images-index) * -100%));
+    transition: transform 200ms ease-in-out;
+}
+
+.images > img {
+    flex: 0 0 25%;
+    width: 25%;
+    aspect-ratio: 16 / 9;
+    padding: .25rem;
+    border-radius: 1rem;
+}
