@@ -1,7 +1,7 @@
-@import "../../main.css";
+@import  "../styling/main.css";
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat-Bold', Arial, Helvetica, sans-serif;
     overflow: hidden;
 }
 
@@ -23,14 +23,15 @@ body {
     background-color:rgba(96, 150, 96, 0.5);
     
     border-radius: 10px;
-    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
     position: fixed;
     left: 50%;
-    transform:translate(-50%, 50px);
+    transform:translate(-50%, 80px);
     width: 50%;
-    height: 600px;
+    height: 650px;
     text-align: center;
     color: #272b1d;
+    padding-bottom: 10px;
 
     overflow-y: auto;
     -ms-overflow-style: none;
@@ -52,11 +53,6 @@ body {
     box-shadow: inset 0 0 5px grey;
 }
 
-#b_anch {
-    text-decoration:none;
-    
-}
-
 .editor a {
     color: #272b1d;
 }
@@ -68,5 +64,5 @@ hr {
     color: rgb(135, 177, 135);
     background-color:rgb(135, 177, 135);
     border-radius: 10px;
-    box-shadow: 0 1px 20px rgba(0,0,0,0.5);
+    box-shadow: 0 0 20px 1px rgba(0,0,0,0.5);
 }
