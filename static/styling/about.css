@@ -4,7 +4,7 @@ body {
     font-family: 'Montserrat-Bold', Arial, Helvetica, sans-serif;
 }
 .navbar {
-    box-shadow: 0 1px 20px rgba(0,0,0,0.5);
+    box-shadow: 0 0 20px 1px rgba(0,0,0,0.5);
 }
 
 .background-img {
@@ -51,7 +51,7 @@ body {
     border-radius: 10px;
     margin-left: 10px;
     margin-right: 10px;
-    box-shadow: 0 6px 20px 0 rgba(0,0,0,0.5);
+    box-shadow: 0 0 20px 1px rgba(0,0,0,0.5);
     transition: 0.2s ease;
     overflow: hidden;
 }
@@ -62,7 +62,7 @@ body {
     height: 250px;
     width: 250px;
     border-radius: 10px;
-    box-shadow: 0 0 6px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 0 20px 1px rgba(0,0,0,0.3);
 }
 
 .footer {
@@ -73,7 +73,7 @@ body {
     height: 45px;
     text-align: center;
     background-color: rgb(135, 177, 135);
-    box-shadow: 0 0 20px 0 rgba(0,0,0,0.5);
+    box-shadow: 0 0 20px 1px rgba(0,0,0,0.5);
     color: #424735;
     font-weight: bold;
     text-transform: uppercase;

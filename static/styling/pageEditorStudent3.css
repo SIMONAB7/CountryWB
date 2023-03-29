@@ -23,7 +23,7 @@ body {
     background-color:rgba(96, 150, 96, 0.5);
     
     border-radius: 10px;
-    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
     position: fixed;
     left: 50%;
     transform:translate(-50%, 80px);
@@ -64,5 +64,5 @@ hr {
     color: rgb(135, 177, 135);
     background-color:rgb(135, 177, 135);
     border-radius: 10px;
-    box-shadow: 0 1px 20px rgba(0,0,0,0.5);
+    box-shadow: 0 0 20px 1px rgba(0,0,0,0.5);
 }

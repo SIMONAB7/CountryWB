@@ -6,7 +6,7 @@ body {
 }
 
 .navbar {
-    box-shadow: 0 1px 20px rgba(0,0,0,0.5);
+    box-shadow: 0 0 20px 1px rgba(0,0,0,0.5);
 }
 
 .background-img {
@@ -309,7 +309,7 @@ footer button.show{
     height: 45px;
     text-align: center;
     background-color: rgb(135, 177, 135);
-    box-shadow: 0 0 20px 0 rgba(0,0,0,0.5);
+    box-shadow: 0 0 20px 1px rgba(0,0,0,0.5);
     color: #424735;
     font-weight: bold;
     text-transform: uppercase;
