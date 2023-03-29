@@ -1,38 +1,37 @@
 const windows = document.querySelector(".window");
 const student = document.querySelector(".students");
+const stuDiv = student.querySelector("div");
 const activeStu = document.querySelector(".activeStudent");
 const stu1 = document.querySelector("#student_1");
-const stuBtn = stu1.querySelector(".student_btn");
-const exBtn = activeStu.querySelector(".ex");
-const activeStuImg = activeStu.querySelector(".image");
+const stu2 = document.querySelector("#student_2");
+const stuImg = stu1.querySelector("#image1");
 const activeStuTxt = activeStu.querySelector(".text");
 
-stuBtn.onclick = ()=> {
-    windows.classList.add("activeInfo");
-    activeStu.classList.add("activeInfo");
-    exBtn.style.visibility = 'visible';
+stu1.addEventListener("mouseover", autoOver);
+stu1.addEventListener("mouseout", autoOut);
 
-    getStudent(stu1);
+function autoOver() {
+    // this.querySelector("#image1").style.height = "250px";
+    stu1.style.height = "400px";
+    stu1.style.transition = "0.3s ease";
+    
 }
 
-exBtn.onclick = ()=> {
-    windows.classList.remove("activeInfo");
-    activeStu.classList.remove("activeInfo");
-    exBtn.style.visibility = 'hidden';
-    activeStuImg.style.visibility = 'hidden';
-    activeStuTxt.style.visibility = 'hidden';
+function autoOut() {
+    this.style.height = "320px";
 }
 
-function getStudent(student){
-    const stuImg = student.querySelector("#image1").getAttribute("src");
-    // const stuImgAlt = student.getElementById("image1").getAttribute("alt");
-    const name = student.querySelector(".student_btn").innerHTML;
+
+// function getStudent(student){
+//     const stuImg = student.querySelector("#image1").getAttribute("src");
+//     // const stuImgAlt = student.getElementById("image1").getAttribute("alt");
+//     const name = student.querySelector(".student_btn").innerHTML;
     
 
-    let imgHTML = '<img src="' + stuImg + '" alt="hello">';
-    activeStuImg.innerHTML = imgHTML;
-    activeStuImg.style.visibility = 'visible';
+//     let imgHTML = '<img src="' + stuImg + '" alt="hello">';
+//     activeStuImg.innerHTML = imgHTML;
+//     activeStuImg.style.visibility = 'visible';
 
-    activeStuTxt.innerHTML = name;
-    activeStuTxt.style.visibility = 'visible';
-}
+//     activeStuTxt.innerHTML = name;
+//     activeStuTxt.style.visibility = 'visible';
+// }
