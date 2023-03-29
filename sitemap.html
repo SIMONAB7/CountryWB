@@ -1,15 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="static/styling/sitemap.css">
-  <title>Sitemap</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Map</title>
+    <link rel="stylesheet" href="static\styling\sitemap.css">
 </head>
-  
-<body>
 
+<body>
     <div class="navbar">
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -20,78 +18,74 @@
             <li><a href="gallery.html">Gallery</a></li>
             <li><a href="about.html">About</a></li>
         </ul>
-    </div>
-
+    </div><br><br>
+    
     <h1 class = "centre">Site Map</h1>
     
-    <svg id="svgJS" height="300" width="1750">
+    <svg id="svgJS" viewBox="0 0 1750 300">
         <a href="index.html"></a>
         <g id="home">
           <rect x="790" y="40" height="50" width="150" rx="10" ry="10" stroke="green" fill="none" stroke-width="2" />
           <text fill="#000" font-size="14" x="865" y="70" font-family="Arial" text-anchor="middle">Home</text>
         </g>
+        <a href="comments.html"></a>
         <g id="comments">
           <rect x="40" y="240" height="50" width="150" rx="10" ry="10" stroke="green" fill="none" stroke-width="2" />
           <text fill="#000" font-size="14" x="115" y="270" font-family="Arial" text-anchor="middle">Comments</text>
         </g>
+        <a href="shop.html"></a>
         <g id="shop">
           <rect x="340" y="240" height="50" width="150" rx="10" ry="10" stroke="green" fill="none" stroke-width="2" />
           <text fill="#000" font-size="14" x="415" y="270" font-family="Arial" text-anchor="middle">Shop</text>
         </g>
+        <a href="sitemap.html"></a>
         <g id="sitemap">
           <rect x="640" y="240" height="50" width="150" rx="10" ry="10" stroke="green" fill="none" stroke-width="2" />
           <text fill="#000" font-size="14" x="715" y="270" font-family="Arial" text-anchor="middle">Site Map</text>
         </g>
+        <a href="quiz.html"></a>
         <g id="quiz">
           <rect x="940" y="240" height="50" width="150" rx="10" ry="10" stroke="green" fill="none" stroke-width="2" />
           <text fill="#000" font-size="14" x="1015" y="270" font-family="Arial" text-anchor="middle">Quiz</text>
         </g>
+        <a href="gallery.html"></a>
         <g id="gallery">
           <rect x="1240" y="240" height="50" width="150" rx="10" ry="10" stroke="green" fill="none" stroke-width="2" />
           <text fill="#000" font-size="14" x="1315" y="270" font-family="Arial" text-anchor="middle">Gallery</text>
         </g>
+        <a href="about.html"></a>
         <g id="about">
           <rect x="1540" y="240" height="50" width="150" rx="10" ry="10" stroke="green" fill="none" stroke-width="2" />
           <text fill="#000" font-size="14" x="1615" y="270" font-family="Arial" text-anchor="middle">About</text>
         </g>
+        <g>
+          <line stroke = "black" stroke-width = "2" x1 = "865" y1 = "90" x2 = "865" y2 = "175"></line> 
+        </g> <!--Vertical line from Home-->
+        <g>
+          <line stroke = "black" stroke-width = "2" x1 = "115" y1 = "175" x2 = "1615" y2 = "175"></line>
+        </g> <!--Horizontal line-->
+        <g>
+          <line stroke = "black" stroke-width = "2" x1 = "115" y1 = "175" x2 = "115" y2 = "240"></line>
+        </g> <!--Comments line-->
+        <g>
+          <line stroke = "black" stroke-width = "2" x1 = "415" y1 = "175" x2 = "415" y2 = "240"></line>
+        </g> <!--Shop line-->
+        <g>
+          <line stroke = "black" stroke-width = "2" x1 = "715" y1 = "175" x2 = "715" y2 = "240"></line>
+        </g> <!--Site map line-->
+        <g>
+          <line stroke = "black" stroke-width = "2" x1 = "1015" y1 = "175" x2 = "1015" y2 = "240"></line>
+        </g> <!--Quiz line-->
+        <g>
+          <line stroke = "black" stroke-width = "2" x1 = "1315" y1 = "175" x2 = "1315" y2 = "240"></line>
+        </g> <!--Gallery line-->
+        <g>
+          <line stroke = "black" stroke-width = "2" x1 = "1615" y1 = "175" x2 = "1615" y2 = "240"></line>
+        </g> <!--Shop line-->
       </svg>
       
-
-      <script>
-        document.getElementById("home").
-	    addEventListener("click", function() {
-		document.location.href="index.html";
-        });
-
-        document.getElementById("comments").
-	    addEventListener("click", function() {
-		document.location.href="comments.html";
-        });
-
-        document.getElementById("shop").
-	    addEventListener("click", function() {
-		document.location.href="shop.html";
-        });
-
-        document.getElementById("sitemap").
-	    addEventListener("click", function() {
-		document.location.href="sitemap.html";
-        });
-
-        document.getElementById("quiz").
-	    addEventListener("click", function() {
-		document.location.href="quiz.html";
-        });
-
-        document.getElementById("gallery").
-	    addEventListener("click", function() {
-		document.location.href="gallery.html";
-        });
-
-        document.getElementById("about").
-	    addEventListener("click", function() {
-		document.location.href="about.html";
-        });
-    </script>
+    <script src = "scripts/sitemap.js"></script>
+    
 </body>
+
 </html>
