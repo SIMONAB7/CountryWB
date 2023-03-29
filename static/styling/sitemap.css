@@ -36,3 +36,10 @@
     stroke: black;
     stroke-width: 2;
     } 
+      
+    .pageeditor{
+        display: block;
+        text-align: center;
+        position: relative;
+    }
+    

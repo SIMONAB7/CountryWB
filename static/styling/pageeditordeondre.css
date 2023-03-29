@@ -1,0 +1,15 @@
+@import "../styling/main.css";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.backtop {
+    display: block;
+    text-align: center;
+  }
+
+.centre{
+    text-align: center;
+    position: relative;
+}
