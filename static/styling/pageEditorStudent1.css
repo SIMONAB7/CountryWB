@@ -53,6 +53,7 @@ body {
 }
 
 .title {
+    text-align: center;
     padding: 1em;
     display: grid;
     place-items: center;
