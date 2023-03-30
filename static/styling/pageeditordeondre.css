@@ -24,6 +24,10 @@ body{
     font-family: 'Montserrat-Regular', Arial, Helvetica, sans-serif;
 }
 
+p {
+    font-size: 15pt;
+}
+
 .backtop {
     display: block;
     text-align: center;
