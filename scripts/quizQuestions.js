@@ -1,6 +1,7 @@
 let questions = [
     {
     num: 1,
+    img: "static/images/bulQuiz.jpg",
     question: "What is the capital of Bulgaria?",
     answer: "Sofia",
     options: [
@@ -12,6 +13,7 @@ let questions = [
   },
   {
     num: 2,
+    img: "static/images/argQuiz.jpg",
     question: "Which country shares the longest border with Chile?",
     answer: "Argentina",
     options: [
@@ -23,6 +25,7 @@ let questions = [
   },
   {
     num: 3,
+    img: "static/images/barbQuiz.jpg",
     question: "Which of these countries has the largest land mass?",
     answer: "Barbados",
     options: [
@@ -34,6 +37,7 @@ let questions = [
   },
   {
     num: 4,
+    img: "static/images/haiQuiz.jpg",
     question: "Which country is closest to Cuba?",
     answer: "Haiti",
     options: [
@@ -45,6 +49,7 @@ let questions = [
   },
   {
     num: 5,
+    img: "static/images/everQuiz.jpg",
     question: "What is the tallest mountain above sea level?",
     answer: "Mount Everest",
     options: [
@@ -56,6 +61,7 @@ let questions = [
   },
   {
     num: 6,
+    img: "static/images/maunaQuiz.jpg",
     question: "What is the tallest mountain from base to peak?",
     answer: "Mauna Kea",
     options: [
@@ -67,6 +73,7 @@ let questions = [
   },
   {
     num: 7,
+    img: "static/images/philiQuiz.jpg",
     question: "How many islands are in the Philipines?",
     answer: "7,641",
     options: [
@@ -78,6 +85,7 @@ let questions = [
   },
   {
     num: 8,
+    img: "static/images/colosQuiz.jpg",
     question: "What is the most visited tourist spot in the world?",
     answer: "The Colosseum, Rome",
     options: [
@@ -89,6 +97,7 @@ let questions = [
   },
   {
     num: 9,
+    img: "static/images/bondiQuiz.jpg",
     question: "What is the most viewed beach on TikTok?",
     answer: "Bondi Beach, Australia",
     options: [
@@ -100,6 +109,7 @@ let questions = [
   },
   {
     num: 10,
+    img: "static/images/morocQuiz.jpg",
     question: "Which African country sees the most tourism?",
     answer: "Morocco",
     options: [
