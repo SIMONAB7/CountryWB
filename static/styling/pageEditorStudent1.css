@@ -49,6 +49,7 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .title {
