@@ -92,24 +92,41 @@ body {
 }
 
 .anchor {
+    border-style: solid;
+    border-radius: 15px;
     overflow: hidden;
     height: 100%;
     width: 23%;
 }
 
 .anchor a {
-    display: block;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
     height: 100%;
     width: 100%;
-    color:transparent;
-    margin:0;
-    padding:0;
+    color: transparent;
+    margin: 0;
+    padding: 0;
 }
 
 .anchor a img{
     height: 100%;
     width: 100%;
 }
+
+.anchor a .anchor-text {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute; /* Add this line */
+    bottom: 1em; /* Add this line */
+    color: white;
+    font-size:2em;
+    text-align: center;
+    width: 100%;
+}
+
 
 .discover {
     text-align: justify;
