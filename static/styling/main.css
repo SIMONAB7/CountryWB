@@ -84,8 +84,16 @@ body {
     bottom: -5px;
     transition: 0.5s;
 }
+
 .navbar ul li:hover::after{
     width: 100%;
+}
+
+.navbar ul li a.active {
+    /* apply the style for the active link */
+    bottom: -20px;
+    border-bottom: 5.4px solid rgb(51, 103, 93);
+    border-radius: 2px 2px;
 }
 
 .logo-holder {

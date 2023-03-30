@@ -17,3 +17,16 @@ const containerPages = { //a map for the containers to which pages they are link
       window.location.href = url;//redirects the user to the corresponding URL to the image they clicked
     });
   });
+
+    // get the current URL
+var currentURL = window.location.href;
+
+// get all the links in the navbar
+var links = document.querySelectorAll('.navbar ul li a');
+
+// loop through the links and add the active class to the current link
+for (var i = 0; i < links.length; i++) {
+  if (links[i].href === currentURL) {
+    links[i].classList.add('active');
+  }
+}
