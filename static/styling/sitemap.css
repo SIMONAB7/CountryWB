@@ -39,6 +39,7 @@
     h1 {
         position: relative;
         z-index: 1;
+        text-shadow: 2px 2px black
     }
       
     footer {
@@ -95,5 +96,6 @@
         display: block;
         text-align: center;
         position: relative;
+        text-shadow: 2px 2px black
     }
     
