@@ -1,4 +1,4 @@
-@import "../styling/main.css";
+@import url('main.css');
 body {
     margin:0;   
 }
@@ -12,25 +12,6 @@ body {
     background-repeat: no-repeat;
 }
 
-@font-face {
-    font-family: 'Montserrat-Black';
-    src: url('../fonts/Montserrat-Black.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Montserrat-Bold';
-    src: url('../fonts/Montserrat-Bold.ttf') format('truetype');
-  }
-  
-@font-face {
-    font-family: 'Montserrat-Regular';
-    src: url('../fonts/Montserrat-Regular.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Montserrat-Light';
-    src: url('../fonts/Montserrat-Light.ttf') format('truetype');
-}
 
 .shop-banner {
     background-image: url('../images/Backdrop.gif');
