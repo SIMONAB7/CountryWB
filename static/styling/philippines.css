@@ -93,19 +93,23 @@ body {
 
 .anchor {
     overflow: hidden;
-    border-radius: 15px;
-    border-style: solid;
     height: 100%;
     width: 23%;
 }
 
-
-
 .anchor a {
-    font-size: 50em;
+    display: block;
+    height: 100%;
+    width: 100%;
     color:transparent;
+    margin:0;
+    padding:0;
 }
 
+.anchor a img{
+    height: 100%;
+    width: 100%;
+}
 
 .discover {
     text-align: justify;
