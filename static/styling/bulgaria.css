@@ -100,6 +100,11 @@ body {
     border: 3px solid rgba(0, 0, 0, 0.7);
     height: 100%;
     width: 23%;
+    transition: transform 0.2s ease-in-out;
+}
+
+.anchor:hover {
+    transform: scale(1.05); 
 }
 
 .anchor a {
@@ -168,6 +173,10 @@ body {
     height: 110vh;
 }
 
+.country-summary img{
+    filter: brightness(75%);
+}
+
 .summary-holder {
     text-align: justify;
     text-justify: inter-word;
@@ -206,6 +215,10 @@ body {
     top: 0.75em;
     height: 110vh;
     width: 100%;
+}
+
+.country-holder img{
+    filter: brightness(75%);
 }
 
 .country-holder:nth-child(odd) {
@@ -254,4 +267,10 @@ body {
 
 .footer-holder .footer {
     width: 90%;
+}
+
+.footer-holder .footer .left-side a {
+    text-decoration: none;
+    color: green;
+    font-family: 'Montserrat-Bold', Arial, Helvetica, sans-serif;
 }
