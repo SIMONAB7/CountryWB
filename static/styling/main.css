@@ -48,6 +48,7 @@ body {
     width: 100%;
     text-align: center;
     z-index: 99; /*lets the navbar be over all elements(not seethrough)*/
+    box-shadow: 0 0 20px 1px rgba(0,0,0,0.5);
 }
 
 .navbar ul {

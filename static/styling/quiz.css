@@ -1,4 +1,5 @@
 @import "../styling/main.css";
+@import "http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css";
 
 body {
     background-color: rgb(222, 226, 216);
@@ -34,7 +35,9 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    color: #272b1d;
 }
+
 .info_box.activeInfo,
 .quiz_box.activeQuiz,
 .result_box.activeResult{
@@ -43,15 +46,18 @@ body {
     pointer-events: auto;
     transform: translate(-50%, -50%) scale(1);
 }
+
 .info_box{
     width: 540px;
-    background: #fff;
-    border-radius: 5px;
+    background: rgb(151, 206, 151);
+    border-radius: 10px;
     transform: translate(-50%, -50%) scale(0.9);
     opacity: 0;
     pointer-events: none;
     transition: all 0.3s ease;
+    box-shadow: 0 0 20px 6px rgba(0,0,0,0.5);
 }
+
 .info_box .info-title{
     height: 60px;
     width: 100%;
@@ -70,8 +76,8 @@ body {
     font-size: 17px;
 }
 .info_box .info-list .info span{
-    font-weight: 600;
-    color: #609660;
+    color: #336333;
+    
 }
 .info_box .buttons{
     height: 60px;
@@ -79,6 +85,7 @@ body {
     align-items: center;
     justify-content: flex-end;
     padding: 0 30px;
+    
 }
 .info_box .buttons button{
     margin: 0 5px;
@@ -91,11 +98,12 @@ body {
     outline: none;
     border-radius: 5px;
     border: 1px solid #609660;
+    box-shadow: 7px 7px 15px 1px rgba(0,0,0,0.5);
     transition: all 0.3s ease;
 }
 .quiz_box{
     width: 550px;
-    background: #fff;
+    background: rgb(151, 206, 151);
     border-radius: 5px;
     transform: translate(-50%, -50%) scale(0.9);
     opacity: 0;
@@ -107,12 +115,12 @@ body {
     z-index: 2;
     height: 70px;
     padding: 0 30px;
-    background: #fff;
+    background: rgb(151, 206, 151);
     border-radius: 5px 5px 0 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 0px 3px 5px 1px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 10px 1px rgba(0,0,0,0.4);
 }
 .quiz_box header .title{
     font-size: 20px;
@@ -133,9 +141,20 @@ body {
 }
 section{
     padding: 25px 30px 20px 30px;
-    background: #fff;
 }
-section .quiz_questions{
+section .question_img {
+    width: 100%;
+    height: 90%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-repeat:no-repeat;
+    background-size:cover;
+    opacity: 0.7;
+    filter: blur(5px);
+}
+section .quiz_question{
     font-size: 25px;
     font-weight: 600;
 }
@@ -160,14 +179,13 @@ section .option_list .option:last-child{
     margin-bottom: 0px;
 }
 section .option_list .option:hover{
-    color: #4a6b4a;
     background: #9bc09b;
     border: 1px solid #527a52;
 }
 section .option_list .option.correct{
     color: #155724;
     background: #d4edda;
-    border: 1px solid #c3e6cb;
+    border: 1px solid #94d1a2;
 }
 section .option_list .option.incorrect{
     color: #721c24;
@@ -178,25 +196,14 @@ section .option_list .option.disabled{
     pointer-events: none;
 }
 section .option_list .option .icon{
-    height: 26px;
-    width: 26px;
-    border: 2px solid transparent;
-    border-radius: 50%;
-    text-align: center;
-    font-size: 13px;
-    pointer-events: none;
+    font-size: 20px;
     transition: all 0.3s ease;
-    line-height: 24px;
 }
 .option_list .option .icon.tick{
     color: #23903c;
-    border-color: #23903c;
-    background: #d4edda;
 }
 .option_list .option .icon.cross{
     color: #a42834;
-    background: #f8d7da;
-    border-color: #a42834;
 }
 footer{
     height: 60px;
@@ -205,6 +212,10 @@ footer{
     align-items: center;
     justify-content: space-between;
     border-top: 1px solid lightgrey;
+    background-color:rgb(151, 206, 151);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 -5px 10px 1px rgba(0,0,0,0.4);
 }
 footer .question_num span{
     display: flex;
@@ -217,34 +228,9 @@ footer .question_num span p{
 footer .question_num span p:first-child{
     padding-left: 0px;
 }
-footer button{
-    height: 40px;
-    padding: 0 13px;
-    font-size: 18px;
-    font-weight: 400;
-    cursor: pointer;
-    border: none;
-    outline: none;
-    color: #fff;
-    border-radius: 5px;
-    background: #609660;
-    border: 1px solid #609660;
-    line-height: 10px;
-    opacity: 0;
-    pointer-events: none;
-    transform: scale(0.95);
-    transition: all 0.3s ease;
-}
-footer button:hover{
-    background: #527a52;
-}
-footer button.show{
-    opacity: 1;
-    pointer-events: auto;
-    transform: scale(1);
-}
+
 .result_box{
-    background: #fff;
+    background: rgb(151, 206, 151);
     border-radius: 5px;
     display: flex;
     padding: 25px 30px;
@@ -256,6 +242,7 @@ footer button.show{
     opacity: 0;
     pointer-events: none;
     transition: all 0.3s ease;
+    box-shadow: 0 0 20px 6px rgba(0,0,0,0.4);
 }
 .result_box .complete_text{
     font-size: 20px;
@@ -284,6 +271,7 @@ footer button.show{
     border-radius: 5px;
     border: 1px solid #609660;
     transition: all 0.3s ease;
+    box-shadow: 7px 7px 15px 1px rgba(0,0,0,0.5);
 }
 .buttons button.restart{
     color: #fff;
