@@ -21,7 +21,6 @@ body {
     color: white;  
     font-family: 'Montserrat-Bold', Arial, Helvetica, sans-serif;
     position: absolute;
-    width: 90%;
     top: 50%; /* position the message 50% from the top */
     left: 50%; /* position the message 50% from the left */
     transform: translate(-50%, -50%); /* center the message using negative translation */
@@ -57,7 +56,6 @@ body {
     text-align: justify;
     text-justify: inter-word;
     margin-top: 1em;
-    margin-left: 7em;
     font-family: 'Montserrat-Regular', Arial, Helvetica, sans-serif;
     font-size: 1.5em;
     text-shadow: 2px 2px black;
