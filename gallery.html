@@ -1,13 +1,14 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Gallery</title>
+    <title>Explorify - Gallery</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href ="static/styling/gallery.css">
+    <link rel="stylesheet" href="static/styling/gallery.css">
 </head>
 
 <body>
+   
     <div class="navbar">
         <div class="logo-holder"><img src="static/images/logo-white.png" alt="logo"></div>
         <ul>
@@ -21,56 +22,39 @@
         </ul>
     </div><br><br>
 
-    <h1 class = "centre">Gallery</h1>
+    <h1 class="centre" style="text-decoration: underline;">Explorify - Gallery(Local)</h1>
 
-    <div class = "content">
-        <button class="handle left-handle">&#8249</button>
-        <div class = "images">
-            <img src = "static\images\JamaicanResort.jpg">
-            <img src = "static\images\fishing.png">
-            <img src = "static\images\hiking.png">
-            <img src = "static\images\plant.png">
-            <img src = "static\images\snowboarding.png">
-            <img src = "static\images\about.jpeg">
-            <img src = "static\images\beach.png">
-            <img src = "static\images\boat.jpg">
+    <div class="content">
+        <button class="handle left-handle">&#8249;</button>
+        <div class="images">
+            <img src="static/images/JamaicanResort.jpg" data-caption="Jamaican Resort:<br><br> This image is of a holiday resort in Jamaica. This is used on the Site Map page as a background image.">
+            <img src="static/images/fishing.png" data-caption="Fishing">
+            <img src="static/images/hiking.png" data-caption="Hiking">
+            <img src="static/images/plant.png" data-caption="Plant">
+            <img src="static/images/snowboarding.png" data-caption="Snowboarding">
+            <img src="static/images/about.jpeg" data-caption="About Us">
+            <img src="static/images/beach.png" data-caption="Beach">
+            <img src="static/images/boat.jpg" data-caption="Boat">
         </div>
-        <button class="handle right-handle">&#8250</button>
-    </div>
+        <button class="handle right-handle">&#8250;</button>
+    </div><br>
 
-    <div class = "responsive">
-        <div class="gallery">
-            <div class="description">Description 1</div>
-            <a target="_blank" href="static\images\Jamaican Resort.jpg" data-img-src="static\images\JamaicanResort.jpg">
-              <img src="static\images\JamaicanResort.jpg" alt="A Jamaican Resort" width="600" height="400">
-            </a>
-          </div>
-          
-    </div>
+    <div class="perma-block">
+        <div class="img-inside">
+            <img src="static/images/ImagePlaceholder.png" alt="Test Placement">
+            <p class="correct-placement"></p>
+        </div>
+    </div><br>
 
-    <div class = "responsive">
-    <div class = "gallery">
-        <div class = "description">Description 2</div>
-        <a target = "_blank" href = "static\images\Jamaican Resort.jpg"> 
-            <img src ="static\images\JamaicanResort.jpg" alt = "A Jamaican Resort" width = "600" height = "400"> 
-        </a>
-    </div>
-    </div>
+    <script src="scripts/gallery.js"></script>
 
-    <div class = "responsive">
-    <div class = "gallery">
-        <div class = "description">Description 3</div>
-        <a target = "_blank" href = "static\images\Jamaican Resort.jpg"> 
-            <img src ="static\images\JamaicanResort.jpg" alt = "A Jamaican Resort" width = "600" height = "400"> 
-        </a>
-    </div>
-    </div>
+    <hr>
 
-<div class="center">
-    <img src="" alt="Center Image">
-    <p></p>
-</div>
-
-<script src = "scripts\gallery.js"></script>
+    <footer>
+        <a href="#" class="backtop">&#8673; Back to the top</a>
+        <a href="pageeditordeondre.html" class = "pageeditor">Page Editor: Student 4</a>
+        <p></p>
+    </footer>
+    
 </body>
 </html>
