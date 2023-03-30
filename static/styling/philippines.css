@@ -21,11 +21,11 @@ body {
     color: white;  
     font-family: 'Montserrat-Bold', Arial, Helvetica, sans-serif;
     position: absolute;
-    top: 50%; /* position the message 50% from the top */
-    left: 50%; /* position the message 50% from the left */
-    transform: translate(-50%, -50%); /* center the message using negative translation */
-    text-align: center; /* center the text inside the message */
-    z-index: 1; /* make sure the message is on top of the image */
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    text-align: center; 
+    z-index: 1; 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -92,20 +92,46 @@ body {
 }
 
 .anchor {
-    overflow: hidden;
-    border-radius: 15px;
+    transition: transform 0.2s ease-in-out;
     border-style: solid;
+    border-radius: 15px;
+    overflow: hidden;
     height: 100%;
     width: 23%;
 }
 
-
-
+.anchor:hover {
+    transform: scale(1.05); 
+  }
+  
 .anchor a {
-    font-size: 50em;
-    color:transparent;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    width: 100%;
+    color: transparent;
+    margin: 0;
+    padding: 0;
 }
 
+.anchor a img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.anchor a .anchor-text {
+    background-color: rgba(0,0,0,0.5);
+    position: absolute; 
+    bottom: 1em; 
+    color: white;
+    font-size:2em;
+    text-align: center;
+    width: 100%;
+}
 
 .discover {
     text-align: justify;
@@ -114,11 +140,11 @@ body {
     font-family: 'Montserrat-Bold', Arial, Helvetica, sans-serif;
     position: absolute;
     width: 90%;
-    top: 50%; /* position the message 50% from the top */
-    left: 50%; /* position the message 50% from the left */
-    transform: translate(-50%, -50%); /* center the message using negative translation */
-    text-align: center; /* center the text inside the message */
-    z-index: 1; /* make sure the message is on top of the image */
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    text-align: center;
+    z-index: 1; 
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -76,7 +76,7 @@ body {
 .navbar ul li::after{
     content: '';
     height: 4px;
-    width: 0; /*sets width to 0 before hover and expands to 100% after hover*/
+    width: 0;
     background: rgb(51, 103, 93);
     border-radius: 30px;
     position: absolute;

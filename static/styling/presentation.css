@@ -1,5 +1,6 @@
 body {
     background-image: url("../images/Backdrop.gif");
+    background-size: cover;
 }
 
 .fadeout {
