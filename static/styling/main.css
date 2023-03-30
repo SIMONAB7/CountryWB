@@ -50,19 +50,19 @@ body {
     z-index: 99; /*lets the navbar be over all elements(not seethrough)*/
 }
 
-ul {
+.navbar ul {
     display: flex;
     align-items: center;
     gap: 1em;
     margin-right: 3.5em;
 }
 
-ul li{
+.navbar ul li{
     list-style: none;
     display: inline-block;
     position: sticky;
 }
-ul li a{
+.navbar ul li a{
     text-decoration: none;
     color: #424735;
     font-family: 'Montserrat-Bold', Arial, Helvetica, sans-serif;
@@ -70,7 +70,7 @@ ul li a{
     text-transform: uppercase;
 }
 
-ul li::after{
+.navbar ul li::after{
     content: '';
     height: 4px;
     width: 0; /*sets width to 0 before hover and expands to 100% after hover*/
@@ -81,7 +81,7 @@ ul li::after{
     bottom: -5px;
     transition: 0.5s;
 }
-ul li:hover::after{
+.navbar ul li:hover::after{
     width: 100%;
 }
 
