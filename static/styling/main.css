@@ -64,7 +64,9 @@ body {
 }
 .navbar ul li a{
     text-decoration: none;
-    color: #424735;
+    /* color: #424735; */
+    color:white;
+    text-shadow: 1px 1px rgb(101, 101, 101);
     font-family: 'Montserrat-Bold', Arial, Helvetica, sans-serif;
     font-weight: bold;
     text-transform: uppercase;
