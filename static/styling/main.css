@@ -3,6 +3,21 @@ body {
     margin: 0;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(222, 226, 216);
+}
+  
+::-webkit-scrollbar-thumb {
+    background-color: rgb(129, 168, 129);
+    border-radius: 3px;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(51, 103, 93);
+}
+
 @font-face {
     font-family: 'Montserrat-Black';
     src: url('../fonts/Montserrat-Black.ttf') format('truetype');
@@ -36,19 +51,19 @@ body {
     box-shadow: 0 0 20px 1px rgba(0,0,0,0.5);
 }
 
-ul {
+.navbar ul {
     display: flex;
     align-items: center;
     gap: 1em;
     margin-right: 3.5em;
 }
 
-ul li{
+.navbar ul li{
     list-style: none;
     display: inline-block;
     position: sticky;
 }
-ul li a{
+.navbar ul li a{
     text-decoration: none;
     /* color: #424735; */
     color:white;
@@ -58,7 +73,7 @@ ul li a{
     text-transform: uppercase;
 }
 
-ul li::after{
+.navbar ul li::after{
     content: '';
     height: 4px;
     width: 0;

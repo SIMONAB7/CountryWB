@@ -57,14 +57,6 @@ next.addEventListener('click', () => {
   });
 });
 
-
-
-
-
-
-
-
-
 const shippingForm = document.getElementById("shipping-form");
 const shippingClear = document.getElementById("shipping-reset");
 
