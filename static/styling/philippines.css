@@ -275,6 +275,8 @@ body {
     width: 90%;
 }
 
-.footer .left-side a {
-    color: black;
+.footer-holder .footer .left-side a {
+    text-decoration: none;
+    color: green;
+    font-family: 'Montserrat-Bold', Arial, Helvetica, sans-serif;
 }
