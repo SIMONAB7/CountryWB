@@ -12,7 +12,7 @@ body {
 .welcome-banner {
     position: relative;
     top: 0.80em;
-    height: 100vh;
+    height: 100%;
     width: 100%;
 }
 
@@ -98,6 +98,10 @@ body {
     height: 100%;
     width: 23%;
 
+}
+
+.anchor img {
+    
 }
 
 .anchor a {
