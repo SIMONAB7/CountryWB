@@ -1,0 +1,87 @@
+* {
+    background-color: rgb(165, 178, 184);
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+.image {
+    background-image : url("../images/student2pg.jpg") ;
+    background-repeat: no-repeat;
+    background-size: 100% 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 160px;
+    position: relative;
+}
+
+h1, p {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    position: sticky;
+    color: rgb(91, 86, 126);
+    background-color: inherit;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    color: rgb(91, 86, 126);
+    text-decoration: underline;
+}
+
+p {
+    font-weight: bold;
+    font-size: large;
+}
+
+.container {
+    text-align: center;
+    margin-top: 25px;
+    background-color: rgb(152, 163, 167); 
+    overflow: hidden;
+    position: relative;
+}
+
+.content{
+    text-align: center;
+    margin: 0;
+}
+
+@media only screen and (min-width: 300px) {
+    .image {
+        background-size: cover;
+    }
+} 
+
+hr {
+    border: 2px solid rgb(81, 104, 94);
+    border-radius: 20px;
+}
+
+.backtop {
+    text-decoration: none;
+    background: none;
+    border-radius: 100px;
+    margin: auto;
+    text-align: center;
+    display: block;
+}
+
+a {
+    text-decoration: underline;
+    color: rgb(81, 104, 94);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+address {
+    display: block;
+    text-align: center;
+    margin: auto;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(91, 86, 126);
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+}

@@ -1,0 +1,68 @@
+@import  "../styling/main.css";
+
+body {
+    font-family: 'Montserrat-Bold', Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+
+.background-img {
+    background-image: url(../images/student3editor.jpg);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-repeat:no-repeat;
+    background-size:cover;
+    opacity: 0.7;
+    filter: blur(5px);
+}
+
+.editor {
+    background-color:rgba(96, 150, 96, 0.5);
+    
+    border-radius: 10px;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.4);
+    position: fixed;
+    left: 50%;
+    transform:translate(-50%, 80px);
+    width: 50%;
+    height: 650px;
+    text-align: center;
+    color: #272b1d;
+    padding-bottom: 10px;
+
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.editor::-webkit-scrollbar {
+    width: 20px;
+}
+
+.editor::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+.editor::-webkit-scrollbar-thumb {
+    background:rgb(135, 177, 135);
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px grey;
+}
+
+.editor a {
+    color: #272b1d;
+}
+
+hr {
+    height:4px;
+    width: 50%;
+    border-width:0;
+    color: rgb(135, 177, 135);
+    background-color:rgb(135, 177, 135);
+    border-radius: 10px;
+    box-shadow: 0 0 20px 1px rgba(0,0,0,0.5);
+}

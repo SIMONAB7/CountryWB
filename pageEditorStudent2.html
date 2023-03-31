@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/styling/pageEditorStudent2.css">
+    <title>Page Editor</title>
+</head>
+<body>
+    <header>
+        <div class="image"></div>
+    </header>
+
+    <div class="container">
+        <hr><br>
+        <h1>Page Editor</h1>
+        <br>
+        <p>Name: Simona Bosilkova</p><br>
+        <p>Role: Student 2</p><br>
+        <p>The pages below were edited by me! :)</p>
+        <br>
+    </div> 
+
+        <hr><br>
+
+    <div class="content">
+        <div class="homepage">
+            <h2>Home page</h2>
+            <br>
+            <p>I have created the main page which includes links to the different pages of the webite inside the navigation bar. <br> 
+                The color pallete was decided between me and my collegues. </p><br>
+            <a href="index.html" class="home">Go to home page</a>
+        </div>
+
+            <br>
+
+        <div class="commentpage">
+            <h2>Feedback form</h2>
+            <br>
+            <p>The comments page is essentially a feedback form that is used by the users <br>
+                 to communicate back to us about their experience with the website. </p><br>
+            <a href="comments.html" class="comments">Go to feedback page</a>
+        </div>
+
+            <br>
+
+        <div class="additionalpage">
+            <h2>Additional page</h2>
+            <br>
+            <p>The additional page that I have created contains images <br>
+                and information about my national country.</p><br>
+            <a href="#additional" class="additional">Go to additional page</a>
+        </div>
+
+    </div>
+    <br>
+    <a href="#" class="backtop"><img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-arrow-up-a-512.png" alt="backtop"  height="14">Back to the top</a>
+    <hr><br>
+    
+        <p id="modified">Last date modified: </p>
+        <p id="demo"></p>
+       
+        <address>Email: w1889667@wesminster.ac.uk</address>
+
+    
+        <script>
+            let text = document.lastModified;
+            document.getElementById("demo").innerHTML = text;
+        </script>
+
+</body>
+</html>

@@ -1,0 +1,246 @@
+@import url('main.css');
+body {
+    margin:0;   
+}
+
+.navbar ul li:nth-child(8){
+    height: 1.5em;
+    width: 1.5em;
+    background-image: url('../images/cart.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.shop-banner {
+    background-image: url('../images/Backdrop.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.shop-banner h1 {
+    color: rgb(135, 177, 135);
+    font-size: 10em;
+    font-family: 'Montserrat-Black', Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px black;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+
+}
+
+.shop-banner h2 {
+    margin-top:0;
+    letter-spacing: 0.2em;
+    color: white;
+    font-size: 2em;
+    font-family: 'Montserrat-Regular', Arial, Helvetica, sans-serif;
+    text-shadow: 1px 1px black;
+
+}
+.shop-banner .img {
+    margin-bottom: 0;
+    font-size: 3em;
+    font-family: 'Montserrat-Black', Arial, Helvetica, sans-serif;
+    color: white;
+    object-fit: cover;
+
+}
+.shop-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.banner-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 10em;
+    width: 80%;
+    font-family: 'Montserrat-Regular', Arial, Helvetica, sans-serif;
+}
+
+.banner-text h1 {
+    line-height: 0;
+    font-family: 'Montserrat-Regular', Arial, Helvetica, sans-serif;
+}
+.item-container {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5em;
+    justify-content: center;
+    margin-bottom: 5em;
+}
+
+.item{
+    height: 30em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.item button {
+    border: none;
+    background-size: cover;   
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    transition: background-image 0.5s ease-in-out;
+}
+
+.item:nth-child(1) button {
+   background-image: url('../images/snorkling.png');
+}
+
+.item:nth-child(2) button {
+    background-image: url('../images/hiking.png');
+ }
+
+ .item:nth-child(3) button {
+    background-image: url('../images/fishing.png');
+ }
+
+ .item:nth-child(4) button {
+    background-image: url('../images/snowboarding.png');
+ }
+
+.item h3 {
+    font-family:'Montserrat-Regular', Arial, Helvetica, sans-serif;
+    margin-bottom: 0;
+}
+
+.item p {
+    margin-top: 0;
+    font-family:'Montserrat-Regular', Arial, Helvetica, sans-serif;
+}
+
+.eco-friendly {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40em;
+    background-color:rgb(135, 177, 135);
+    width: 100%;
+}
+
+.volunteer-holder {
+    width: 80%;
+    height: 80%;
+    display: flex;  
+    justify-content: space-between;
+    gap: 2em;
+}
+
+
+.plant {
+    height: 100%;
+    background-image: url('../images/plant.png');
+    background-size: cover;
+    background-position: center;
+
+}
+
+.item:nth-child(1) button:hover {
+    background-image: url('../images/snorkling-hover.png');
+ }
+
+
+.item:nth-child(2) button:hover {
+    background-image: url('../images/hiking-hover.png');
+}
+
+.item:nth-child(3) button:hover {
+    background-image: url('../images/fishing-hover.png');
+}
+
+.item:nth-child(4) button:hover {
+    background-image: url('../images/snowboarding-hover.png');
+}
+
+.plant {
+    height: 92.5%;
+    width: 55%;
+}
+
+.volunteers {
+    width: 45%;
+    font-family:'Montserrat-Regular', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.volunteers img {
+    height: 25em; 
+    width: 100%;  
+}
+
+.msg-container {
+    color:white;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12em;
+    font-family:'Montserrat-Regular', Arial, Helvetica, sans-serif;
+    width:80%;
+}
+
+.left-side {
+    width: 50%;
+}
+.right-side {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: 50%;
+}
+.icons{
+    height: 50px;
+    width: 200px;
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+}
+#github {
+    background-image: url('../images/github.png');
+    height: 50px;
+    width: 50px;
+}
+
+#linkedin {
+    background-image: url('../images/linkedin.png');
+    height: 50px;
+    width: 50px;
+}
+
+.page-editor {
+    font-family: 'Montserrat-Regular', sans-serif;
+    text-decoration: none;
+    color:black;
+}
+
+.price .sale {
+    text-decoration: line-through;
+    color:#9a2205;
+}
+
+.price {
+    margin-top:0.5em;
+    display: flex;
+    flex-direction: row;
+}
+
+#checkout {
+    color:transparent;
+    text-shadow: none;
+}

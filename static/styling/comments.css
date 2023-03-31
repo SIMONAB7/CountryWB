@@ -1,0 +1,137 @@
+@import "../styling/main.css";
+* {
+    box-sizing: border-box;
+    padding: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.img-background {
+    background-image: url(/static/images/background-img-comments.jpg);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+    background-repeat:no-repeat;
+    background-size:cover;
+    opacity: 0.8;
+    filter: blur(5px);
+}
+
+#title{
+    color: rgb(117, 152, 117)
+}
+/*colour change for each of the labels*/
+label[for="name"] {
+    color: #424735;
+    font-weight: bold;
+}
+
+label[for="navigation"], label[for="visit"], label[for="recommend"] {
+    color: #424735;
+    position: relative;
+    top: 3px;
+    left: -5px; /*setting specific padding to fit the lable and the radio button symmetrically */
+}
+
+label[for="satisfied"] {
+    display: inline-block;
+    position: relative;
+    top: 20px;
+    left: -19px;
+    color: #424735;
+  }
+
+label[for="updates"] {
+    color: #424735;
+    font-weight: bold;
+}
+
+/*formatting the forms content to be in the middle*/
+.form-content {
+    width: auto;
+    margin: 50px;
+    margin-bottom: auto;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #f2f2f2; /*setting a neutral color for the form background to have contrast*/
+    padding: 10px;
+    height: max-content;
+}
+
+p {
+    color: #424735;
+    font-weight: bold;
+
+}
+
+.updates {
+    color: #424735;
+    font-weight: bold;
+    border: 1px solid rgb(37, 15, 15); 
+    background-color: rgb(222, 226, 216);
+    width: 20%;
+    text-align: center;
+}
+
+/*formatting all of the input types in order to match and to fit correctly on the page*/
+input[type=text], select, textarea {    
+    padding: 6px;    
+    border: 1px solid rgb(37, 15, 15); 
+    background-color: rgb(222, 226, 216);
+    border-radius: 4px;    
+  }    
+
+input[type=email], select, textarea {       
+    padding: 6px;    
+    border: 1px solid rgb(37, 15, 15);  
+    background-color: rgb(222, 226, 216);
+    border-radius: 4px;    
+  }   
+
+textarea {
+    width: 40%;
+    padding-bottom: 0px;
+}
+
+input[type="radio"] {
+    vertical-align: middle;
+}
+  
+input[type="submit"] {
+    background-color: rgb(135, 177, 135); 
+    border: none;
+    color: white;
+    padding: 10px 50px;
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-image: linear-gradient(0, #33675d, #33675d);
+    background-size: 0 0; /*sets background to 0 so in the hover effect it can expand to create the animation*/
+    transition: 0.5s;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+input[type="submit"]:hover {
+    background-size: 100% 100%; /*makes the background to fully consume the button changing it to a different color*/
+}
+
+footer{
+    text-align: center;
+    position: relative;
+    padding-top: 10px;
+}
+
+footer a{
+    text-decoration:solid;
+    color: #476f59;
+    font-weight: bold;
+    font-size:large;
+    background-color: rgb(254, 222, 196);
+    border-radius: 10px;
+}
+footer a::after{
+    text-decoration:solid;
+    font-weight: bold;
+}

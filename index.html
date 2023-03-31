@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
-    <title>Travel</title>
+    <link rel="stylesheet" href="static/styling/main.css">
+    <link rel="stylesheet" href="static/styling/earth.css">
+    <title>Explorify Home</title>
 </head>
 <body>
     <div class="navbar">
+        <div class="logo-holder"><img src="static/images/logo-white.png" alt="logo"></div>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="comments.html">Comments</a></li>
@@ -18,9 +20,45 @@
             <li><a href="about.html">About</a></li>
         </ul>
     </div>
+    
 
+    <div class="earth-container">
+        <div class="left">
+            <div class="jamaica-container">
+                <img src="static/images/jamaica-img.jpg" alt="jamaica">
+                <h1>Jamaica</h1>
+            </div>
+            
+            <br>
 
+            <div class="chile-container">
+                <img src="static/images/chile-img.jpg" alt="chile">
+                <h1>Chile</h1>
+            </div>
+        </div>
 
+        <div id="earth"></div>
+        
+        <div class="right">
+            <div class="philippines-container">
+                <img src="static/images/philippines-img.jpg" alt="philippines">
+                <h1>Philippines</h1>
+            </div>
 
+            <br>
+
+            <div class="bulgaria-container">
+                <img src="static/images/bulgaria-img.jpg" alt="bulgaria">
+                <h1>Bulgaria</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="editor">
+        <a href="pageEditorStudent2.html" id="editor">&#8594; Page editor &#8592;</a>
+    </div>
+
+    <script src="scripts/index.js"></script>
+    
 </body>
 </html>
