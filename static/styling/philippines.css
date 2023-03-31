@@ -93,7 +93,7 @@ body {
 
 .anchor {
     transition: transform 0.2s ease-in-out;
-    border-style: solid;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
     border-radius: 15px;
     overflow: hidden;
     height: 100%;
@@ -204,6 +204,7 @@ body {
 
 
 .summary-holder .left-summary img, .summary-holder .right-summary img {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
     border-radius: 15px;
     border:none;
     object-fit: cover;
@@ -254,6 +255,7 @@ body {
 }
 
 .country-holder .attraction-left img, .country-holder .attraction-right img {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
     border-radius: 15px;
     border:none;
     object-fit: cover;
