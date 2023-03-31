@@ -108,16 +108,31 @@ body {
 }
 
 .anchor a {
-    display: block;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
     height: 100%;
     width: 100%;
-    color:transparent;
-    margin:0;
-    padding:0;
+    color: transparent;
+    margin: 0;
+    padding: 0;
 }
 
 .anchor a img{
     height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.anchor a .anchor-text {
+    background-color: rgba(0,0,0,0.5);
+    position: absolute; 
+    bottom: 1em; 
+    color: white;
+    font-size:2em;
+    text-align: center;
     width: 100%;
 }
 
