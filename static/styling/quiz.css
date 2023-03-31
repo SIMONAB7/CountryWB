@@ -11,7 +11,7 @@ body {
 }
 
 .background-img {
-    background-image: url(/static/images/quiz.png);
+    background-image: url("../images/quiz.png");
     width: 100%;
     height: 100%;
     position: fixed;
