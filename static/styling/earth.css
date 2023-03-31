@@ -91,10 +91,24 @@ h1{
     box-shadow: 0 5px 10px 8px rgba(7, 7, 7, 0.5);
     transition: border 0.2s ease-in-out;
     border: solid 4px rgb(122, 132, 108);
-  }
+}
   
-  .earth-container img:hover {
+.earth-container img:hover {
     border: solid 4px rgb(102, 138, 102);
     border-width: 6px;
     transition: border-width 0.2s ease-in-out;
-  }
+}
+
+.editor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -30px;
+    flex-direction: column;
+    font-family: 'Montserrat-Bold', Arial, Helvetica, sans-serif;
+}
+
+.editor a{
+    font-family: 'Montserrat-Bold', Arial, Helvetica, sans-serif;
+    color: green;
+}
