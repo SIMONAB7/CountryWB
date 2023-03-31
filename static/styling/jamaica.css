@@ -1,5 +1,5 @@
 @import url('main.css');
-@import url('shop.css');
+
 * {
     box-sizing: border-box;
 }
@@ -12,7 +12,7 @@ body {
 .welcome-banner {
     position: relative;
     top: 0.80em;
-    height: 100%;
+    height: 100vh;
     width: 100%;
 }
 
@@ -22,8 +22,8 @@ body {
     font-family: 'Montserrat-Bold', Arial, Helvetica, sans-serif;
     position: absolute;
     top: 50%; 
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 50%; 
+    transform: translate(-50%, -50%); 
     text-align: center; 
     z-index: 1; 
     display: flex;
@@ -92,23 +92,46 @@ body {
 }
 
 .anchor {
-    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
     border-radius: 15px;
-    border-style: solid;
+    overflow: hidden;
     height: 100%;
     width: 23%;
-
 }
 
-.anchor img {
-    
-}
-
+.anchor:hover {
+    transform: scale(1.05); 
+  }
+  
 .anchor a {
-    font-size: 50em;
-    color:transparent;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    width: 100%;
+    color: transparent;
+    margin: 0;
+    padding: 0;
 }
 
+.anchor a img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.anchor a .anchor-text {
+    background-color: rgba(0,0,0,0.5);
+    position: absolute; 
+    bottom: 1em; 
+    color: white;
+    font-size:2em;
+    text-align: center;
+    width: 100%;
+}
 
 .discover {
     text-align: justify;
@@ -120,7 +143,7 @@ body {
     top: 50%; 
     left: 50%; 
     transform: translate(-50%, -50%); 
-    text-align: center; 
+    text-align: center;
     z-index: 1; 
     display: flex;
     flex-direction: column;
@@ -172,6 +195,10 @@ body {
     width: 90%;
 }
 
+.summary-holder:nth-child(1) {
+    padding-top: 1em;
+}
+
 .summary-holder .left-summary, .summary-holder .right-summary {
     width: 49.5%;
     height: 100%;
@@ -181,6 +208,7 @@ body {
 
 
 .summary-holder .left-summary img, .summary-holder .right-summary img {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
     border-radius: 15px;
     border:none;
     object-fit: cover;
@@ -198,7 +226,7 @@ body {
     align-items: center;
     row-gap: 1em;
     top: 0.75em;
-    height: 110vh;
+    height: 120vh;
     width: 100%;
 }
 
@@ -231,6 +259,7 @@ body {
 }
 
 .country-holder .attraction-left img, .country-holder .attraction-right img {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
     border-radius: 15px;
     border:none;
     object-fit: cover;
@@ -250,12 +279,8 @@ body {
     width: 90%;
 }
 
-.centre{
-    text-align: center;
-    position: relative;
-    font-family: 'Montserrat-Regular', Arial, Helvetica, sans-serif;
+.footer-holder .footer .left-side a {
+    text-decoration: none;
+    color: green;
+    font-family: 'Montserrat-Bold', Arial, Helvetica, sans-serif;
 }
-
-.backtop {
-    font-family: 'Montserrat-Regular', Arial, Helvetica, sans-serif;
-  }

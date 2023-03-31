@@ -97,7 +97,7 @@
             <textarea name="Requests" id="req" cols="30" rows="5" placeholder="Add your message here..."></textarea>
             <br><br>
 
-            <input type="submit" value="Submit">
+            <input type="submit" value="Submit" id="submit">
         </form>
     </div>
 
@@ -106,5 +106,13 @@
         <a href="pageEditorStudent2.html" id="editor">&#8594; Page editor &#8592;</a><br><br>
     </footer>
     <script src="scripts/index.js"></script>
+
+    <script>
+        const submitform = document.getElementById("submit");
+        submitform.addEventListener("click", function() {
+            window.alert("Thank you for submitting your feedback!")
+        });
+    </script>
+    
 </body>
 </html>
