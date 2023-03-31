@@ -1,33 +1,38 @@
 const windows = document.querySelector(".window");
 const student = document.querySelector(".students");
+const activeStu = document.querySelector(".activeStudent");
+const stu1 = document.querySelector("#student_1");
+const stuBtn = stu1.querySelector(".student_btn");
+const exBtn = activeStu.querySelector(".ex");
+const activeStuImg = activeStu.querySelector(".image");
+const activeStuTxt = activeStu.querySelector(".text");
 
-var hovers = document.getElementsByClassName("student");
-for (var i=0; i<hovers.length; i++) {
-    hovers[i].addEventListener("mouseover", autoOver);
-    hovers[i].addEventListener("mouseout", autoOut);
+stuBtn.onclick = ()=> {
+    windows.classList.add("activeInfo");
+    activeStu.classList.add("activeInfo");
+    exBtn.style.visibility = 'visible';
+
+    getStudent(stu1);
 }
 
-function autoOver() {
-    this.style.transform = "scale(1.1)"
-    this.style.height = "410px";
-    this.style.transition = "0.3s ease";
-    this.style.marginBottom = "-90px";
-
-    for (var i=0;i<hovers.length;i++){
-        if (hovers[i] != this) {
-            hovers[i].style.opacity = "0.7";
-        }
-    }
+exBtn.onclick = ()=> {
+    windows.classList.remove("activeInfo");
+    activeStu.classList.remove("activeInfo");
+    exBtn.style.visibility = 'hidden';
+    activeStuImg.style.visibility = 'hidden';
+    activeStuTxt.style.visibility = 'hidden';
 }
 
-function autoOut() {
-    this.style.transform = "scale(1.0)"
-    this.style.height = "320px";
-    this.style.marginBottom = "0";
+function getStudent(student){
+    const stuImg = student.querySelector("#image1").getAttribute("src");
+    // const stuImgAlt = student.getElementById("image1").getAttribute("alt");
+    const name = student.querySelector(".student_btn").innerHTML;
+    
 
-    for (var i=0;i<hovers.length;i++){
-        if (hovers[i] != this) {
-            hovers[i].style.opacity = "1";
-        }
-    }
+    let imgHTML = '<img src="' + stuImg + '" alt="hello">';
+    activeStuImg.innerHTML = imgHTML;
+    activeStuImg.style.visibility = 'visible';
+
+    activeStuTxt.innerHTML = name;
+    activeStuTxt.style.visibility = 'visible';
 }

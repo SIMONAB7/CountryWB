@@ -40,28 +40,29 @@ div.perma-block {
     border-radius: 1rem;
     transition: 0.2s;
     font-size: 14pt;
-  }
-  
-  img {
+}
+
+  div.img-inside img {
     margin: 0 auto;
     width: 60%; 
     height: auto
   }
-  
-  img:hover {
-    border: 2px solid #000000;
+
+  .images img:hover {
+      border: 2px solid #000000;
   }
 
   p.correct-placement {
     margin: 0;
     position: absolute;
-    top: 50%;
+    top: 35%;
     right: 1.25%;
     border: 2px solid #000000;
     background-color: white;
     border-radius: .25rem;
     display: none;
-    width: 300px;
+    width: 150px;
+    height: auto;
     margin-left: auto;
   }
   
@@ -140,3 +141,4 @@ hr {
   border: 1px solid rgb(154, 175, 112);
   border-radius: 10px;
 }
+

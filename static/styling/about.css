@@ -1,11 +1,13 @@
 @import "../styling/main.css";
 
 body {
-    font-family: 'Montserrat-Bold', Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .navbar {
-    box-shadow: 0 0 20px 1px rgba(0,0,0,0.5);
+    z-index: 5;
+    box-shadow: 0 1px 20px rgba(0,0,0,0.5);
+    margin-top: -22px;
 }
 
 .background-img {
@@ -24,65 +26,93 @@ body {
 
 .title {
     text-align: center;
-    position: fixed;
-    width: 100%;
+    position: relative;
     top: 75px;
+    margin-left: auto;
+    margin-right: auto;
     color: #272b1d;
 }
 
 .students {
     color: #272b1d;
     width: 100%;
-    height: 700px;
     left: 0;
+    z-index: 0;
     text-align: center;
-    position: fixed;
-    top: 150px;
-    overflow-y:auto;
-    padding-right: 17px;
-    box-sizing: content-box;
+    position: absolute;
+    top: 20%;
 }
 
-.student {
+.students div {
     background-color: rgb(135, 177, 135);
     display:inline-block;
-    width: 260px;
-    height: 320px;
-    margin-top: 50px;
+    width: 15%;
     border-radius: 10px;
     margin-left: 10px;
     margin-right: 10px;
-    box-shadow: 0 0 20px 1px rgba(0,0,0,0.5);
-    transition: 0.2s ease;
-    overflow: hidden;
+    box-shadow: 0 6px 20px 0 rgba(0,0,0,0.5);
 }
 
 .students img {
     position: relative;
     top: 10px;
-    height: 250px;
-    width: 250px;
+    height: 90%;
+    width: 90%;
     border-radius: 10px;
     box-shadow: 0 0 20px 1px rgba(0,0,0,0.4);
 }
 
-.footer {
+.window.activeInfo {
     position: fixed;
-    bottom: 0;
+    top: 0;
     left: 0;
+    z-index: 4;
     width: 100%;
-    height: 45px;
-    text-align: center;
-    background-color: rgb(135, 177, 135);
-    box-shadow: 0 0 20px 1px rgba(0,0,0,0.5);
-    color: #424735;
+    height: 100%;
+    background-color:rgba(60, 60, 60, 0.5);
+}
+
+.activeStudent.activeInfo {
+    position: absolute;
+    z-index: 6;
+    width: 50%;
+    height: 75%;
+    top: 15%;
+    left: 25%;
+    background:rgb(135, 177, 135);
+    border-radius: 10px;
+    box-shadow: 0 6px 20px 0 rgba(0,0,0,0.5);
+}
+
+.activeStudent .ex {
+    float: right;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #272b1d;
+    font-size: large;
     font-weight: bold;
-    text-transform: uppercase;
+    visibility: hidden;
 }
 
-.footer a {
-    text-decoration: none;
-    color: black;
+.activeStudent .image {
+    visibility: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    width: 50%;
+    text-align: center;
 }
 
+.activeStudent .image img {
+    border-radius: 10px;
+    box-shadow: 0 6px 20px 0 rgba(0,0,0,0.5);
+}
 
+.activeStudent .text {
+    visibility: hidden;
+    text-align: center;
+    color: #272b1d;
+    font-size: larger;
+    font-weight: bolder;
+}

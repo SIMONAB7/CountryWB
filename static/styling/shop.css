@@ -1,6 +1,29 @@
-@import url('main.css');
 body {
     margin:0;   
+}
+.navbar {
+    position: fixed;
+    z-index: 100;
+    background-color: rgb(135, 177, 135);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin-right: 3.5em;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    position: sticky;
 }
 
 .navbar ul li:nth-child(8){
